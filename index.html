@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
+██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
+╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
+░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
+░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
+░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
+░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
+░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
+░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
+██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
+╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
+░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
+What are you doing here?! you sneaky developer...
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Ashish Pathinnya | Portfolio, Computer Science Engineering graduate specializing in AI, Machine Learning, and Full Stack Development. Passionate about creating innovative solutions." />
+  <meta name="keywords"
+    content="ashish pathinnya,ashish pathinnya portfolio,Ashish Pathinnya Portfolio,ashishpathinnya,ashish pathinnya site,Ashish Pathinnya Site,ashish pathinnya me,ashish pathinnya web,ashish pathinnya github,ashishpathinnya site,ashish pathinnya software engineer,software engineer,ashish pathinnya developer,developer" />
+  <meta name="author" content="Ashish Pathinnya" />
+  <meta property="og:image" content="https://www.ashishpathinnya.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Ashish Pathinnya | Portfolio" />
+  <meta property="og:description"
+    content="Hi! My name is Ashish Pathinnya. I'm a Computer Science Engineering graduate specializing in AI, Machine Learning, and Full Stack Development. Passionate about creating innovative solutions." />
+
+  <meta property="og:url" content="https://ashishpathinnya.site" />
+  <meta property="og:site_name" content="Ashish Pathinnya Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AshishPathinnya" />
+  <meta name="twitter:title" content="Ashish Pathinnya | Portfolio" />
+  <meta name="twitter:description"
+  content="Hi! My name is Ashish Pathinnya. I'm a Computer Science Engineering graduate specializing in AI, Machine Learning, and Full Stack Development. Passionate about creating innovative solutions." />
+  <meta name="twitter:image" content="https://www.ashishpathinnya.site/src/png/Preview-card-min.png" />
+  <title>Ashish Pathinnya | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+</head>
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="experience" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#experience" aria-label="experience menu button">
+              &#60;/Experience&#62;
+            </a>
+          </li>
+
+          <li class="certifications" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
+            <a href="#certifications" aria-label="certifications menu button">
+              &#60;/Certifications&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="1100">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- hamburger button inside navbar -->
+      <div class="hamburger" id="hamburger" data-aos="fade">
+        <div class="hamburgerbase">
+          <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+            <span class="burger-bar" id="burger-bar1"></span>
+            <span class="burger-bar" id="burger-bar2"></span>
+            <span class="burger-bar" id="burger-bar3"></span>
+          </button>
+        </div>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    
+    
+    
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+          <a href="#experience" tabindex="0" aria-label="experience menu button">
+            &#60;/Experience&#62;
+          </a>
+        </li>
+        <li id="certifications-mobile-tab" class="mobile-navbar-tabs-li certifications" onclick="hidemenubyli()">
+          <a href="#certifications" tabindex="0" aria-label="certifications menu button">
+            &#60;/Certifications&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">N</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          <p class="jello">a</p>
+          <p class="jello">s</p>
+          <p class="jello">t</p>
+          <p class="jello">e</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">A</p>
+          <p class="jello">s</p>
+          <p class="jello">h</p>
+          <p class="jello">i</p>
+          <p class="jello">s</p>
+          <p class="jello">h</p>
+          &nbsp;
+          <p class="jello">P</p>
+          <p class="jello">a</p>
+          <p class="jello">t</p>
+          <p class="jello">h</p>
+          <p class="jello">i</p>
+          <p class="jello">n</p>
+          <p class="jello">n</p>
+          <p class="jello">y</p>
+          <p class="jello">a</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">b</p>
+            <p class="jello">u</p>
+            <p class="jello">i</p>
+            <p class="jello">l</p>
+            <p class="jello">d</p>
+          </div>
+          <div>
+            <p class="jello">A</p>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+          </div>
+          <div>
+            <p class="jello">s</p>
+            <p class="jello">o</p>
+            <p class="jello">l</p>
+            <p class="jello">u</p>
+            <p class="jello">t</p>
+            <p class="jello">i</p>
+            <p class="jello">o</p>
+            <p class="jello">n</p>
+            <p class="jello">s</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Computer Science Engineering graduate specializing in AI, Machine Learning, and Full Stack Development. 
+          Passionate about creating innovative solutions with Python, React, and modern technologies.<br />
+          <br />
+          I enjoy solving complex problems, building intelligent systems, and
+          creating seamless user experiences.
+        </p>
+
+      </div>
+
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              Hi! My name is Ashish Pathinnya. I'm a Computer Science Engineering graduate from NIT Arunachal Pradesh with expertise in AI, Machine Learning, and Full Stack Development. I love creating intelligent systems and innovative solutions.
+            </p>
+            <br />
+            <p tabindex="0">
+              My journey in technology started with a passion for automation and intelligent systems. 
+              I've worked as an RPA & Test Automation Intern at Indian Oil Corporation Limited, 
+              developing robotic process automation solutions that improved workflow efficiency by 40%.
+            </p>
+            <br />
+            <p tabindex="0">
+              My main focus these days is building AI-powered applications and secure web solutions. 
+              I enjoy working with Python, React, TensorFlow, and modern technologies to solve complex problems 
+              and create seamless user experiences.
+            </p>
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"
+              class="signsvgpath"></path>
+          </svg>
+        </div>
+        <div class="text">Resume</div>
+      </button>
+          </div>
+          <div class="dp" data-aos="fade-up">
+            <img src="src/webp/ashish_photo.jpg" alt="Ashish Pathinnya" class="dp-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends here -->
+
+    <section class="skills-section-container" id="skills" data-aos="fade-up">
+      <div class="skills-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="tech-stack-wrapper">
+          <div class="section-subheading">
+            <h3 class="section-subheading-article" tabindex="0">
+              Tech Stack
+            </h3>
+          </div>
+
+          <div class="tech-stack-container">
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="100">
+              <div class="tech-stack-img">
+                <img src="src/png/htmllogo.png" alt="html skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">HTML</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="200">
+              <div class="tech-stack-img">
+                <img src="src/png/csslogo.png" alt="css skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">CSS</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="300">
+              <div class="tech-stack-img">
+                <img src="src/png/jslogo.png" alt="js skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">JS</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="400">
+              <div class="tech-stack-img">
+                <img src="src/png/tailwind.png" alt="python skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">PYTHON</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="500">
+              <div class="tech-stack-img">
+                <img src="src/png/reactlogo.png" alt="react skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">REACTJS</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="600">
+              <div class="tech-stack-img">
+                <img src="src/png/nextlogo.png" alt="nextjs skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">NEXTJS</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="700">
+              <div class="tech-stack-img">
+                <img src="src/png/node.png" alt="nodejs skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">NODEJS</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="800">
+              <div class="tech-stack-img">
+                <img src="src/png/astro.png" alt="tensorflow skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">TENSORFLOW</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="900">
+              <div class="tech-stack-img">
+                <img src="src/png/githublogo.png" alt="github skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">GITHUB</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1000">
+              <div class="tech-stack-img">
+                <img src="src/png/gitlogo.png" alt="git skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">GIT</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1100">
+              <div class="tech-stack-img">
+                <img src="src/png/tinacms.png" alt="opencv skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">OPENCV</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1200">
+              <div class="tech-stack-img">
+                <img src="src/png/contentfulcms.png" alt="machine learning skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">SCIKIT-LEARN</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1300">
+              <div class="tech-stack-img">
+                <img src="src/png/clogo.png" alt="c language skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">C</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1400">
+              <div class="tech-stack-img">
+                <img src="src/png/cpplogo.png" alt="c++ language skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">C++</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1500">
+              <div class="tech-stack-img">
+                <img src="src/png/pslogo.png" alt="typescript skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">TYPESCRIPT</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1600">
+              <div class="tech-stack-img">
+                <img src="src/png/figmalogo.png" alt="mongodb skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">MONGODB</h4>
+              </div>
+            </div>
+
+            <div class="tech-stack-box" data-aos="fade-up-right" data-aos-delay="1700">
+              <div class="tech-stack-img">
+                <img src="src/png/ailogo.png" alt="selenium skill" />
+              </div>
+              <div class="tech-stack-info">
+                <h4 class="tech-stack-info-h4" tabindex="0">SELENIUM</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends here -->
+
+    <section class="experience-section-container" id="experience" data-aos="fade-up">
+      <div class="experience-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Experience heading">
+            &#60;/Experience&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="experience-boxes-container">
+          <div class="experience-box" data-aos="fade-up-right" data-aos-delay="100">
+            <div class="experience-box-wrapper">
+              <div class="experience-box-header">
+                <div class="experience-box-header-left">
+                  <h3 class="experience-box-header-h3" tabindex="0">
+                    RPA & Test Automation Intern
+                  </h3>
+                  <div class="experience-box-company">
+                    <h4 class="experience-box-company-h4" tabindex="0">
+                      Indian Oil Corporation Limited
+                    </h4>
+                    <p class="experience-box-location">Guwahati Refinery, Assam</p>
+                  </div>
+                </div>
+                <div class="experience-box-header-right">
+                  <span class="experience-box-date">July 2023 – Aug 2023</span>
+                </div>
+              </div>
+              <div class="experience-box-body">
+                <ul class="experience-box-responsibilities">
+                  <li tabindex="0">
+                    Developed robotic process automation solutions using Python, Selenium, Google API, and Zoom API
+                  </li>
+                  <li tabindex="0">
+                    Created real-time Zoom meeting automation based on email content analysis improving workflow efficiency by 40%
+                  </li>
+                  <li tabindex="0">
+                    Collaborated with cross-functional teams to integrate automation solutions into existing enterprise systems
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-box" data-aos="fade-up-left" data-aos-delay="200">
+            <div class="experience-box-wrapper">
+              <div class="experience-box-header">
+                <div class="experience-box-header-left">
+                  <h3 class="experience-box-header-h3" tabindex="0">
+                    Web Development Intern
+                  </h3>
+                  <div class="experience-box-company">
+                    <h4 class="experience-box-company-h4" tabindex="0">
+                      Assam Power Distribution Company Limited
+                    </h4>
+                    <p class="experience-box-location">Guwahati, Assam</p>
+                  </div>
+                </div>
+                <div class="experience-box-header-right">
+                  <span class="experience-box-date">Aug 2023 – Sep 2023</span>
+                </div>
+              </div>
+              <div class="experience-box-body">
+                <ul class="experience-box-responsibilities">
+                  <li tabindex="0">
+                    Developed responsive electricity unit calculator web application using HTML5, CSS3, and JavaScript
+                  </li>
+                  <li tabindex="0">
+                    Implemented user-friendly interface with real-time calculation functionality and form validation
+                  </li>
+                  <li tabindex="0">
+                    Optimized application performance and ensured cross-browser compatibility across multiple platforms
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- experience section ends here -->
+
+    <section class="certifications-section-container" id="certifications" data-aos="fade-up">
+      <div class="certifications-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Certifications heading">
+            &#60;/Certifications&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="certifications-boxes-container">
+          <div class="certification-box" data-aos="fade-up-right" data-aos-delay="100">
+            <div class="certification-box-wrapper">
+              <div class="certification-box-image">
+                <img src="src/img/nptel-certificate.jpg" alt="NPTEL Database Management System Certificate" class="certification-certificate-image" />
+              </div>
+              <div class="certification-box-header">
+                <div class="certification-box-icon">
+                  <div class="certification-icon">
+                    <img src="src/img/nptel-logo.png" alt="NPTEL Logo" class="certification-logo-image" />
+                  </div>
+                </div>
+                <div class="certification-box-content">
+                  <h3 class="certification-box-title" tabindex="0">
+                    NPTEL Database Management System
+                  </h3>
+                  <p class="certification-box-issuer" tabindex="0">
+                    National Programme on Technology Enhanced Learning (NPTEL)
+                  </p>
+                  <div class="certification-box-status">
+                    <span class="certification-status-badge">Certified</span>
+                  </div>
+                </div>
+              </div>
+              <div class="certification-box-description">
+                <p tabindex="0">
+                  Comprehensive certification in database management systems covering SQL, database design, normalization, transactions, and advanced database concepts through India's premier online learning platform.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="certification-box" data-aos="fade-up-left" data-aos-delay="200">
+            <div class="certification-box-wrapper">
+              <div class="certification-box-image">
+                <img src="src/img/ethical-hacking-certificate.png" alt="Ethical Hacking Essentials Certificate" class="certification-certificate-image" />
+              </div>
+              <div class="certification-box-header">
+                <div class="certification-box-icon">
+                  <div class="certification-icon">
+                    <img src="src/img/codered-logo.jpg" alt="CodeRed Logo" class="certification-logo-image" />
+                  </div>
+                </div>
+                <div class="certification-box-content">
+                  <h3 class="certification-box-title" tabindex="0">
+                    Ethical Hacking Essentials
+                  </h3>
+                  <p class="certification-box-issuer" tabindex="0">
+                    EC Council Learning
+                  </p>
+                  <div class="certification-box-status">
+                    <span class="certification-status-badge">Certified</span>
+                  </div>
+                </div>
+              </div>
+              <div class="certification-box-description">
+                <p tabindex="0">
+                  Professional certification in ethical hacking fundamentals, covering penetration testing, vulnerability assessment, security tools, and cybersecurity best practices from leading security education provider.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="certification-box" data-aos="fade-up-right" data-aos-delay="300">
+            <div class="certification-box-wrapper">
+              <div class="certification-box-image">
+                <img src="src/img/python-developer-certificate.jpg" alt="Python Developer Udemy Certificate" class="certification-certificate-image" />
+              </div>
+              <div class="certification-box-header">
+                <div class="certification-box-icon">
+                  <div class="certification-icon">
+                    <img src="src/img/udemy-logo.png" alt="Udemy Logo" class="certification-logo-image" />
+                  </div>
+                </div>
+                <div class="certification-box-content">
+                  <h3 class="certification-box-title" tabindex="0">
+                    Complete Python Developer
+                  </h3>
+                  <p class="certification-box-issuer" tabindex="0">
+                    Udemy
+                  </p>
+                  <div class="certification-box-status">
+                    <span class="certification-status-badge">Certified</span>
+                  </div>
+                </div>
+              </div>
+              <div class="certification-box-description">
+                <p tabindex="0">
+                  Comprehensive Python development course covering fundamentals to advanced concepts including object-oriented programming, data structures, web development, APIs, and modern Python frameworks with hands-on projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- certifications section ends here -->
+
+    <section class="project-section-container" id="projects" data-aos="fade-up">
+      <div class="project-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Projects heading">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="project-boxes-container">
+          <div class="project-box" data-aos="fade-up-right" data-aos-delay="100">
+            <div class="project-box-wrapper">
+              <div class="project-box-header">
+                <div class="project-box-header-left">
+                  <img src="src/svg/secure-chain-messenger.svg" alt="SecureChain Messenger favicon" />
+                  <h3 class="project-box-header-h3" tabindex="0">
+                    SecureChain Messenger
+                  </h3>
+                </div>
+              </div>
+              <div class="project-box-body">
+                <div class="project-box-body-content">
+                  <p tabindex="0">
+                    Decentralized blockchain-inspired secure messaging platform with end-to-end encryption using AES-256-GCM and RSA-2048. Built with React, TypeScript, and Web Crypto API.
+                  </p>
+                  <div class="project-box-body-links">
+                    <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+                      <button class="github-redirect" tabindex="0">
+                        <img src="src/svg/github.svg" alt="github redirect button" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-box-footer">
+                <div class="project-box-footer-img">
+                  <img src="src/svg/secure-chain-messenger-preview.svg" alt="SecureChain Messenger preview image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-up-left" data-aos-delay="200">
+            <div class="project-box-wrapper">
+              <div class="project-box-header">
+                <div class="project-box-header-left">
+                  <img src="src/svg/github-dashboard.svg" alt="GitHub Repository Analysis Dashboard favicon" />
+                  <h3 class="project-box-header-h3" tabindex="0">
+                    GitHub Repository Analysis Dashboard
+                  </h3>
+                </div>
+              </div>
+              <div class="project-box-body">
+                <div class="project-box-body-content">
+                  <p tabindex="0">
+                    Interactive dashboard analyzing GitHub repository metrics using dataset of 1052 repositories. Built with React, Vite, Tailwind CSS, and Recharts with CSV export functionality.
+                  </p>
+                  <div class="project-box-body-links">
+                    <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+                      <button class="github-redirect" tabindex="0">
+                        <img src="src/svg/github.svg" alt="github redirect button" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-box-footer">
+                <div class="project-box-footer-img">
+                  <img src="src/svg/github-dashboard-preview.svg" alt="GitHub Repository Analysis Dashboard preview image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-up-right" data-aos-delay="300">
+            <div class="project-box-wrapper">
+              <div class="project-box-header">
+                <div class="project-box-header-left">
+                  <img src="src/svg/house-price-prediction.svg" alt="House Price Prediction favicon" />
+                  <h3 class="project-box-header-h3" tabindex="0">
+                    House Price Prediction
+                  </h3>
+                </div>
+              </div>
+              <div class="project-box-body">
+                <div class="project-box-body-content">
+                  <p tabindex="0">
+                    Machine learning model using Kaggle House Prices dataset with LightGBM achieving cross-validated RMSE of 0.0103. Built with Python, Pandas, and Scikit-learn.
+                  </p>
+                  <div class="project-box-body-links">
+                    <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+                      <button class="github-redirect" tabindex="0">
+                        <img src="src/svg/github.svg" alt="github redirect button" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-box-footer">
+                <div class="project-box-footer-img">
+                  <img src="src/svg/house-price-prediction-preview.svg" alt="House Price Prediction preview image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-up-left" data-aos-delay="400">
+            <div class="project-box-wrapper">
+              <div class="project-box-header">
+                <div class="project-box-header-left">
+                  <img src="src/svg/emotion-detection-chatbot.svg" alt="Emotion Detection Chatbot favicon" />
+                  <h3 class="project-box-header-h3" tabindex="0">
+                    Emotion Detection Chatbot
+                  </h3>
+                </div>
+              </div>
+              <div class="project-box-body">
+                <div class="project-box-body-content">
+                  <p tabindex="0">
+                    Intelligent chatbot with real-time facial emotion recognition using pre-trained CNN model. Built with Python, TensorFlow, Keras, OpenCV, and Tkinter GUI.
+                  </p>
+                  <div class="project-box-body-links">
+                    <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+                      <button class="github-redirect" tabindex="0">
+                        <img src="src/svg/github.svg" alt="github redirect button" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-box-footer">
+                <div class="project-box-footer-img">
+                  <img src="src/svg/emotion-detection-chatbot-preview.svg" alt="Emotion Detection Chatbot preview image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-up-right" data-aos-delay="500">
+            <div class="project-box-wrapper">
+              <div class="project-box-header">
+                <div class="project-box-header-left">
+                  <img src="src/svg/face-recognition-system.svg" alt="Real-Time Face Recognition System favicon" />
+                  <h3 class="project-box-header-h3" tabindex="0">
+                    Real-Time Face Recognition System
+                  </h3>
+                </div>
+              </div>
+              <div class="project-box-body">
+                <div class="project-box-body-content">
+                  <p tabindex="0">
+                    Advanced face recognition system using LBPH and SVM algorithms with 95% accuracy. Built with Python, OpenCV, Scikit-learn, and NumPy with real-time processing.
+                  </p>
+                  <div class="project-box-body-links">
+                    <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+                      <button class="github-redirect" tabindex="0">
+                        <img src="src/svg/github.svg" alt="github redirect button" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-box-footer">
+                <div class="project-box-footer-img">
+                  <img src="src/svg/face-recognition-preview.svg" alt="Real-Time Face Recognition System preview image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-up-left" data-aos-delay="600">
+            <div class="project-box-wrapper">
+              <div class="project-box-header">
+                <div class="project-box-header-left">
+                  <img src="src/svg/instagram-automation-bot.svg" alt="Instagram Automation Bot favicon" />
+                  <h3 class="project-box-header-h3" tabindex="0">
+                    Instagram Automation Bot
+                  </h3>
+                </div>
+              </div>
+              <div class="project-box-body">
+                <div class="project-box-body-content">
+                  <p tabindex="0">
+                    Automated Instagram bot with intelligent login process and web crawling functionality. Built with Python, Selenium, and ChromeDriver with robust error handling.
+                  </p>
+                  <div class="project-box-body-links">
+                    <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+                      <button class="github-redirect" tabindex="0">
+                        <img src="src/svg/github.svg" alt="github redirect button" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-box-footer">
+                <div class="project-box-footer-img">
+                  <img src="src/svg/instagram-automation-preview.svg" alt="Instagram Automation Bot preview image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects section ends here -->
+
+    <div class="getintouch-section-container" id="getintouch" data-aos="fade-up">
+      <div class="getintouch-section">
+        <div class="getintouch-animated-text">
+          <p id="connectText">Let's connect and collaborate on exciting projects!</p>
+          <span class="cursor-blink">|</span>
+        </div>
+      </div>
+    </div>
+    <!-- contact section ends here -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-quote">
+            <p>"Learning, Living, and Leveling Up."</p>
+          </div>
+          
+          <div class="footer-getintouch">
+            <p>GetInTouch();</p>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://www.instagram.com/ashish_sarma_7001?igsh=MTc1bXBnd2lsazJmOQ==" target="_blank" rel="noopener noreferrer">
+              <img src="src/svg/instagram.svg" alt="instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/ashishkpathinnya/" target="_blank" rel="noopener noreferrer">
+              <img src="src/svg/linkedin.svg" alt="linkedin" />
+            </a>
+            <a href="https://github.com/AshishKPathinnya" target="_blank" rel="noopener noreferrer">
+              <img src="src/svg/github.svg" alt="github" />
+            </a>
+            <a href="mailto:ashishpathinnya100@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src="src/svg/twitter.svg" alt="email" />
+            </a>
+          </div>
+          
+
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div id="emptyarea" onclick="hidemenubyli()"></div>
+  <div id="backtotopbutton" onclick="scrolltoTopfunction()">
+    <article tabindex="0" aria-label="back to top">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M19.2 16.8L11.2 24.8C10.8 25.2 10.8 25.6 11.2 26C11.6 26.4 12 26.4 12.4 26L20.8 17.6C21.2 17.2 21.2 16.8 20.8 16.4L12.4 8C12 7.6 11.6 7.6 11.2 8C10.8 8.4 10.8 8.8 11.2 9.2L19.2 16.8Z"
+          fill="white"/>
+      </svg>
+    </article>
+  </div>
+
+  <!-- Fixed contact button and settings -->
+  <div class="contact-btn-div">
+    <a href="mailto:ashishpathinnya100@gmail.com" tabindex="-1">
+      <button class="letsTalkBtn">
+        <p class="letsTalkBtn-text">Let's Talk!</p>
+        <span class="letsTalkBtn-BG"></span>
+      </button></a>
+    <div class="setting-container" id="setting-container">
+      <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+      <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+        aria-label="settings for sound and appearance"></label>
+
+      <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+        <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+        <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+          aria-label="switch appearance"></label>
+      </div>
+
+      <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+        <input type="checkbox" id="switchforsound" onclick="playpause()" />
+        <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+          class="needtobeinvert"></label>
+      </div>
+    </div>
+    <!-- setting div ends -->
+  </div>
+  <!-- contact-btn-div -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

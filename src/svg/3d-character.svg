@@ -1,0 +1,85 @@
+<svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffdbac;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4c2a1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headphoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background glow -->
+  <ellipse cx="100" cy="280" rx="80" ry="15" fill="url(#headphoneGradient)" opacity="0.3"/>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="220" rx="45" ry="70" fill="url(#shirtGradient)"/>
+  
+  <!-- Arms -->
+  <ellipse cx="65" cy="200" rx="15" ry="35" fill="url(#shirtGradient)" transform="rotate(-20 65 200)"/>
+  <ellipse cx="135" cy="200" rx="15" ry="35" fill="url(#shirtGradient)" transform="rotate(20 135 200)"/>
+  
+  <!-- Hands -->
+  <circle cx="55" cy="230" r="12" fill="url(#skinGradient)"/>
+  <circle cx="145" cy="230" r="12" fill="url(#skinGradient)"/>
+  
+  <!-- Neck -->
+  <ellipse cx="100" cy="140" rx="18" ry="15" fill="url(#skinGradient)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="100" r="40" fill="url(#skinGradient)"/>
+  
+  <!-- Hair -->
+  <path d="M60 80 Q70 60 100 65 Q130 60 140 80 Q135 70 130 75 Q120 70 110 72 Q100 70 90 72 Q80 70 70 75 Q65 70 60 80" fill="url(#hairGradient)"/>
+  
+  <!-- Headphones -->
+  <ellipse cx="100" cy="65" rx="50" ry="8" fill="url(#headphoneGradient)"/>
+  <circle cx="65" cy="85" r="15" fill="url(#headphoneGradient)"/>
+  <circle cx="135" cy="85" r="15" fill="url(#headphoneGradient)"/>
+  <circle cx="65" cy="85" r="8" fill="#1a1a1a"/>
+  <circle cx="135" cy="85" r="8" fill="#1a1a1a"/>
+  
+  <!-- Glasses -->
+  <ellipse cx="85" cy="95" rx="12" ry="8" fill="none" stroke="#333" stroke-width="2"/>
+  <ellipse cx="115" cy="95" rx="12" ry="8" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="97" y1="95" x2="103" y2="95" stroke="#333" stroke-width="2"/>
+  <line x1="73" y1="95" x2="68" y2="92" stroke="#333" stroke-width="2"/>
+  <line x1="127" y1="95" x2="132" y2="92" stroke="#333" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="95" r="3" fill="#333"/>
+  <circle cx="115" cy="95" r="3" fill="#333"/>
+  <circle cx="86" cy="94" r="1" fill="white"/>
+  <circle cx="116" cy="94" r="1" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M78 88 Q85 86 92 88" stroke="#4a4a4a" stroke-width="2" fill="none"/>
+  <path d="M108 88 Q115 86 122 88" stroke="#4a4a4a" stroke-width="2" fill="none"/>
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="102" rx="2" ry="3" fill="#f4c2a1"/>
+  
+  <!-- Mouth -->
+  <path d="M95 110 Q100 113 105 110" stroke="#d4a574" stroke-width="2" fill="none"/>
+  
+  <!-- Beard -->
+  <path d="M85 115 Q100 125 115 115 Q110 120 100 122 Q90 120 85 115" fill="url(#hairGradient)"/>
+  
+  <!-- Collar -->
+  <path d="M82 150 L100 160 L118 150" stroke="url(#headphoneGradient)" stroke-width="3" fill="none"/>
+  
+  <!-- Floating elements -->
+  <circle cx="50" cy="120" r="2" fill="url(#headphoneGradient)" opacity="0.6"/>
+  <circle cx="150" cy="110" r="1.5" fill="url(#headphoneGradient)" opacity="0.4"/>
+  <circle cx="30" cy="160" r="1" fill="url(#headphoneGradient)" opacity="0.3"/>
+  <circle cx="170" cy="140" r="1" fill="url(#headphoneGradient)" opacity="0.5"/>
+</svg>

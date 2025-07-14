@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="8" fill="#1a1a1a"/>
+  <path d="M32 8L8 26V56H24V42H40V56H56V26L32 8Z" fill="#00d4ff"/>
+  <rect x="30" y="32" width="4" height="8" fill="#1a1a1a"/>
+  <rect x="18" y="34" width="4" height="4" fill="#1a1a1a"/>
+  <rect x="42" y="34" width="4" height="4" fill="#1a1a1a"/>
+  <rect x="14" y="46" width="6" height="6" fill="#1a1a1a"/>
+  <rect x="44" y="46" width="6" height="6" fill="#1a1a1a"/>
+  <path d="M8 44L14 38L20 42L26 36L32 40L38 34L44 38L50 32L56 36" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="38" r="2" fill="#00ff88"/>
+  <circle cx="20" cy="42" r="2" fill="#00ff88"/>
+  <circle cx="26" cy="36" r="2" fill="#00ff88"/>
+  <circle cx="32" cy="40" r="2" fill="#00ff88"/>
+  <circle cx="38" cy="34" r="2" fill="#00ff88"/>
+  <circle cx="44" cy="38" r="2" fill="#00ff88"/>
+  <circle cx="50" cy="32" r="2" fill="#00ff88"/>
+  <circle cx="56" cy="36" r="2" fill="#00ff88"/>
+</svg>

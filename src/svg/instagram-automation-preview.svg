@@ -1,0 +1,44 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#0a0a0a"/>
+  <rect x="20" y="20" width="360" height="260" rx="12" fill="#1a1a1a" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="320" height="40" rx="6" fill="#00d4ff" fill-opacity="0.1"/>
+  <text x="200" y="65" text-anchor="middle" fill="#00d4ff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Instagram Automation Bot</text>
+  
+  <!-- Instagram interface mockup -->
+  <rect x="50" y="100" width="140" height="100" rx="6" fill="#333" stroke="#e4405f" stroke-width="1"/>
+  <text x="120" y="120" text-anchor="middle" fill="#e4405f" font-family="Arial, sans-serif" font-size="12">Instagram</text>
+  
+  <!-- Mock Instagram posts -->
+  <rect x="60" y="130" width="30" height="30" rx="4" fill="#e4405f" fill-opacity="0.3"/>
+  <rect x="100" y="130" width="30" height="30" rx="4" fill="#e4405f" fill-opacity="0.3"/>
+  <rect x="140" y="130" width="30" height="30" rx="4" fill="#e4405f" fill-opacity="0.3"/>
+  
+  <!-- Like buttons -->
+  <circle cx="75" cy="175" r="5" fill="#ff3040"/>
+  <text x="75" y="179" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">♥</text>
+  <circle cx="115" cy="175" r="5" fill="#ff3040"/>
+  <text x="115" y="179" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">♥</text>
+  <circle cx="155" cy="175" r="5" fill="#ff3040"/>
+  <text x="155" y="179" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">♥</text>
+  
+  <!-- Bot control panel -->
+  <rect x="210" y="100" width="140" height="100" rx="6" fill="#333"/>
+  <text x="280" y="120" text-anchor="middle" fill="#00d4ff" font-family="Arial, sans-serif" font-size="12">Bot Control Panel</text>
+  
+  <text x="220" y="140" fill="#00ff88" font-family="Arial, sans-serif" font-size="11">✓ Auto-Login Active</text>
+  <text x="220" y="155" fill="#00ff88" font-family="Arial, sans-serif" font-size="11">✓ Web Crawler Running</text>
+  <text x="220" y="170" fill="#00ff88" font-family="Arial, sans-serif" font-size="11">✓ Error Handling: ON</text>
+  <text x="220" y="185" fill="#00d4ff" font-family="Arial, sans-serif" font-size="11">Posts Processed: 247</text>
+  
+  <!-- Activity log -->
+  <rect x="50" y="220" width="300" height="40" rx="6" fill="#333"/>
+  <text x="60" y="235" fill="#00d4ff" font-family="Arial, sans-serif" font-size="10">Activity Log:</text>
+  <text x="60" y="248" fill="#00ff88" font-family="Arial, sans-serif" font-size="9">12:34 - Successfully logged in</text>
+  <text x="60" y="258" fill="#00ff88" font-family="Arial, sans-serif" font-size="9">12:35 - Crawling posts... 15 processed</text>
+  
+  <!-- Selenium indicator -->
+  <rect x="270" y="220" width="80" height="20" rx="4" fill="#00d4ff"/>
+  <text x="310" y="232" text-anchor="middle" fill="#0a0a0a" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Selenium</text>
+</svg>
