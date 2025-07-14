@@ -4,9 +4,12 @@
 
 This is a personal portfolio website for Ashish Pathinnya, a Computer Science Engineering graduate specializing in AI, Machine Learning, and Full Stack Development. The project is a static frontend website built with vanilla HTML, CSS, and JavaScript, featuring a modern dark theme with smooth animations and responsive design. The site includes sections for home, about, skills, and projects.
 
-## User Preferences
+## Live Website Link : https://ashishkpathinnya.github.io/Portfolio/
 
-Preferred communication style: Simple, everyday language.
+##Screenshots:
+<img width="1920" height="1080" alt="Screenshot 2025-07-15 000756" src="https://github.com/user-attachments/assets/eaa514bf-9f9c-4440-96d9-eca622877f0a" />
+<img width="1920" height="1080" alt="Screenshot 2025-07-15 000818" src="https://github.com/user-attachments/assets/92197216-60aa-48bd-8109-0ef0c64a5e3d" />
+<img width="1920" height="1080" alt="Screenshot 2025-07-15 000833" src="https://github.com/user-attachments/assets/8c1d01e8-9009-42ad-8e28-7bc4e2bd3a89" />
 
 ## System Architecture
 
